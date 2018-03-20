@@ -10,6 +10,16 @@ An elegant library for stubbing HTTP requests in Swift, allowing you to stub any
 pod 'Mockingjay'
 ```
 
+[Carthage](https://github.com/Carthage/Carthage)
+
+```bash
+carthage update
+cd Carthage/Checkouts/URITemplate.swift
+swift package generate-xcodeproj
+cd ../../..
+carthage build --cache-builds --no-skip-current --platform ios
+```
+
 ## Usage
 
 Mockingjay has full integration to XCTest and you simply just need to register a stub, it will automatically be unloaded at the end of your test case. It will also work with the [Quick](https://github.com/Quick/Quick) behaviour-driven development framework.
